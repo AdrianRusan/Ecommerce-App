@@ -65,7 +65,7 @@ const Cart = () => {
               <div className='item-desc'>
                 <div className='flex top'>
                   <h5>{item.name}</h5>
-                  <h5>${item.price}</h5>
+                  <h5>{item.price} RON</h5>
                 </div>
                 <div className='flex bottom'>
                   <div className=''>
@@ -93,7 +93,7 @@ const Cart = () => {
           <div className='cart-bottom'>
             <div className='total'>
               <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
+              <h3>{totalPrice} RON</h3>
             </div>
             <div className='btn-container'>
               <button type='button' className='btn' onClick={handleCheckout}>
